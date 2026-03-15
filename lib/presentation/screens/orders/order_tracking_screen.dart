@@ -22,7 +22,7 @@ class OrderTrackingScreen extends StatelessWidget {
                 color: AppColors.primary.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(16),
               ),
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -30,11 +30,11 @@ class OrderTrackingScreen extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text('Estimated Delivery', style: TextStyle(color: Colors.grey)),
-                          const Text('25 - 35 mins', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                          Text('Estimated Delivery', style: TextStyle(color: Colors.grey)),
+                          Text('25 - 35 mins', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                         ],
                       ),
-                      const Icon(Icons.delivery_dining, size: 40, color: AppColors.primary),
+                      Icon(Icons.delivery_dining, size: 40, color: AppColors.primary),
                     ],
                   ),
                 ],

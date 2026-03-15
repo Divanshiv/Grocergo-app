@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:grocergo/presentation/providers/address_provider.dart';
 import 'package:grocergo/presentation/widgets/custom_button.dart';
 import 'package:grocergo/presentation/widgets/custom_textfield.dart';
-import 'package:grocergo/presentation/screens/checkout/checkout_screen.dart';
 
 class AddressScreen extends StatefulWidget {
   const AddressScreen({super.key});

@@ -15,7 +15,11 @@ class _OrderHistoryScreenState extends State<OrderHistoryScreen> {
   @override
   void initState() {
     super.initState();
-    Future.microtask(() => Provider.of<OrderProvider>(context, listen: false).fetchOrders());
+    Future.microtask(() {
+      if (mounted) {
+        Provider.of<OrderProvider>(context, listen: false).fetchOrders();
+      }
+    });
   }
 
   @override

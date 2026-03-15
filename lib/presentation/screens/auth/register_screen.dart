@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:grocergo/presentation/providers/auth_provider.dart';
 import 'package:grocergo/presentation/widgets/custom_button.dart';
 import 'package:grocergo/presentation/widgets/custom_textfield.dart';
-import 'package:grocergo/utils/constants/constants.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});

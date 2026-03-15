@@ -20,6 +20,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
   void initState() {
     super.initState();
     Future.microtask(() {
+      if (!mounted) return;
       if (widget.categoryId != null) {
         Provider.of<ProductProvider>(context, listen: false).fetchProductsByCategory(widget.categoryId!);
       } else {
